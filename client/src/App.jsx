@@ -13,7 +13,8 @@ import PlacePage from './pages/PlacePage';
 import BookingsPage from './pages/BookingsPage';
 import BookingPage from './pages/BookingPage';
 
-axios.defaults.baseURL = 'http://localhost:4000';
+const baseURL = import.meta.env.VITE_REACT_APP_API_URL;
+axios.defaults.baseURL = baseURL;//base URL of axios req, for example when making a req to endpoint '/bookings',the full URL of the req will be http://localhost:4000/bookings
 axios.defaults.withCredentials = true;
 
 function App() {
