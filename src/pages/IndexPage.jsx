@@ -19,7 +19,7 @@ export default function IndexPage() {
             <Link to={'/place/'+place._id} className=" " key={place.title}>
                 <div className="rounded-2xl mb-2 flex">
                     {place.photos?.[0] && (
-                        <img className="rounded-2xl aspect-square  object-cover " src={'http://localhost:4000/uploads/' + place.photos[0]} />
+                        <img className="rounded-2xl aspect-square  object-cover " src={'https://mini-airbnb-website-api.onrender.com/uploads/' + place.photos[0]} />
                     )}{/* 'aspect-square' will give you a square container(based on the bigger dimention) & stretching the image. 'Object-cover' enlarges the image to fit the sqaure container */}
                 </div>
                 <h2 className="text-sm font-bold ">
