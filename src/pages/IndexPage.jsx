@@ -7,7 +7,7 @@ export default function IndexPage() {
     const [places,setPlaces] = useState([]);
 
     useEffect(() => {
-        axios.get('/places:4000').then(response => { //'response' is an arr, each element is an object
+        axios.get('/places').then(response => { //'response' is an arr, each element is an object
             setPlaces(response.data);//'.data' contains the content of the response body, e.g. JSON, text...
         });
     },[]);
