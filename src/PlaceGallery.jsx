@@ -27,7 +27,7 @@ export default function PlaceGallery({place}){
                     {place?.photos?.length > 0 && (
                         place.photos.map(photo => (
                             <div key={photo}> 
-                                <img src={'http://localhost:4000/uploads/'+ photo} alt="property photos"/>
+                                <img src={'https://mini-airbnb-api.onrender.com/uploads/'+ photo} alt="property photos"/>
                             </div>
                         ))
                     )}

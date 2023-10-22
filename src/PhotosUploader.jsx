@@ -66,7 +66,7 @@ export default function PhotosUploader({addedPhotos,onChange}){
                         {addedPhotos.length > 0 && addedPhotos.map((ele) => (
                             <div className="flex h-32 relative" key={ele}>
                                 
-                                <img className="rounded-2xl w-full object-cover " src={"http://localhost:4000/uploads/" + ele } alt="A photo of this property" />
+                                <img className="rounded-2xl w-full object-cover " src={"https://mini-airbnb-api.onrender.com/uploads/" + ele } alt="A photo of this property" />
                                
                                 <button onClick={(ev) => removePhoto(ev,ele)} className="cursor-pointer absolute bottom-1 right-1 text-white bg-black bg-opacity-50 rounded-2xl p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

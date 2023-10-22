@@ -9,6 +9,6 @@ export default function PlaceImg({place, index=0, classname = null}){
     }
 
     return (
-        <img className='classname' src={'http://localhost:4000/uploads/'+ place.photos[0]} alt="property photo"/>
+        <img className='classname' src={'https://mini-airbnb-api.onrender.com/uploads/'+ place.photos[0]} alt="property photo"/>
         );
 }
