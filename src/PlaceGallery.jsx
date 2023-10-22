@@ -45,7 +45,7 @@ export default function PlaceGallery({place}){
                     <div className="">
                         {place.photos?.[0] && (
                             // <div className="border border-red-400">
-                                <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer object-cover aspect-square lg:aspect-auto" src={'http://localhost:4000/uploads/' + place.photos[0]} alt="property photo 1" />
+                                <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer object-cover aspect-square lg:aspect-auto" src={'https://mini-airbnb-api.onrender.com/uploads/' + place.photos[0]} alt="property photo 1" />
                         //     
                         )}
                     </div>
@@ -54,7 +54,7 @@ export default function PlaceGallery({place}){
                         <div>
                             {place.photos?.[1] && (
                             
-                            <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer aspect-square lg:aspect-auto object-cover  " src={'http://localhost:4000/uploads/' + place.photos[1]} alt="property photo 2"/>
+                            <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer aspect-square lg:aspect-auto object-cover  " src={'https://mini-airbnb-api.onrender.com/uploads/' + place.photos[1]} alt="property photo 2"/>
                             
                             )}
                         </div>
@@ -62,7 +62,7 @@ export default function PlaceGallery({place}){
                         
                         <div className="">
                             {place.photos?.[2] && (
-                                <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer aspect-square lg:aspect-auto object-cover relative top-2" src={'http://localhost:4000/uploads/' + place.photos[2]} alt="property photo 3"/>
+                                <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer aspect-square lg:aspect-auto object-cover relative top-2" src={'https://mini-airbnb-api.onrender.com/uploads/' + place.photos[2]} alt="property photo 3"/>
                             )} 
                         </div> 
                         
@@ -73,7 +73,7 @@ export default function PlaceGallery({place}){
                         <div>
                             {place.photos?.[3] && (
                             
-                            <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer aspect-square lg:aspect-auto object-cover " src={'http://localhost:4000/uploads/' + place.photos[3]} alt="property photo 2"/>
+                            <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer aspect-square lg:aspect-auto object-cover " src={'https://mini-airbnb-api.onrender.com/uploads/' + place.photos[3]} alt="property photo 2"/>
                             
                             )}
                         </div>
@@ -81,7 +81,7 @@ export default function PlaceGallery({place}){
                         
                         <div >
                             {place.photos?.[4] && (
-                                <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer aspect-square lg:aspect-auto object-cover relative top-2 " src={'http://localhost:4000/uploads/' + place.photos[4]} alt="property photo 3"/>
+                                <img onClick={() => {setShowAllPhotos(true)}} className="cursor-pointer aspect-square lg:aspect-auto object-cover relative top-2 " src={'https://mini-airbnb-api.onrender.com/uploads/' + place.photos[4]} alt="property photo 3"/>
                             )} 
                         </div> 
                         
